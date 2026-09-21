@@ -1,0 +1,24 @@
+{
+  "title": "Innova Ducto M7",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Innova Ducto M7",
+        "description": "Innova v2 cloud access. Leave the node blank to detect it automatically.",
+        "data": {
+          "email": "Innova email",
+          "password": "Innova password",
+          "mac": "Wi-Fi MAC address",
+          "node_id": "Node (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Login or device discovery failed. Check the Innova v2 logs.",
+      "invalid_mac": "Invalid MAC address."
+    },
+    "abort": {
+      "already_configured": "Device is already configured."
+    }
+  }
+}

@@ -41,6 +41,20 @@ I preset Manuale/Calendario e il comando Turbo sono implementati sulla base dell
 
 L'accesso tramite Google/OAuth non è implementato. L'integrazione utilizza il cloud: non offre controllo locale né Bluetooth.
 
+## Installazione tramite HACS
+
+Il repository può essere aggiunto a HACS come **repository personalizzato**:
+
+1. Apri **HACS → Integrazioni**.
+2. Dal menu in alto a destra scegli **Repository personalizzati**.
+3. Inserisci `https://github.com/markdade80/innovaductom7`.
+4. Seleziona la categoria **Integrazione** e aggiungi il repository.
+5. Cerca **Innova Ducto M7** in HACS e installalo.
+6. Riavvia Home Assistant.
+7. Apri **Impostazioni → Dispositivi e servizi → Aggiungi integrazione** e cerca **Innova Ducto M7**.
+
+Il repository non è ancora incluso nell'elenco HACS predefinito: fino all'eventuale approvazione pubblica va aggiunto come repository personalizzato.
+
 ## Installazione manuale
 
 1. Scarica ed estrai il pacchetto dell'integrazione.
@@ -58,8 +72,6 @@ L'accesso tramite Google/OAuth non è implementato. L'integrazione utilizza il c
 8. Lascia vuoto il campo **Nodo** per il rilevamento automatico. Se il cloud restituisce più nodi per lo stesso MAC, specifica quello da configurare.
 
 Ripeti la configurazione per aggiungere un altro dispositivo o nodo.
-
-L'installazione tramite HACS non è ancora documentata o verificata per questo pacchetto.
 
 ## Utilizzo
 
@@ -89,7 +101,7 @@ La disponibilità effettiva delle funzioni dipende dal dispositivo. Le capacità
 
 ## Aggiornamento
 
-Sostituisci i file della cartella `custom_components/innova_ducto_m7` con quelli della nuova versione e riavvia Home Assistant. Mantieni la configurazione esistente: non occorre reinserire le credenziali.
+Se l'integrazione è stata installata tramite HACS, gli aggiornamenti vengono proposti direttamente da HACS. Con installazione manuale, sostituisci i file della cartella `custom_components/innova_ducto_m7` con quelli della nuova versione e riavvia Home Assistant. Mantieni la configurazione esistente: non occorre reinserire le credenziali.
 
 Il dominio `innova_ducto_m7` è distinto da `innova_duepuntozero`: l'integrazione può essere installata senza sovrascrivere quel componente.
 

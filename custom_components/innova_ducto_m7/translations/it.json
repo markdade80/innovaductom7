@@ -1,0 +1,24 @@
+{
+  "title": "Innova Ducto M7",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Innova Ducto M7",
+        "description": "Accesso cloud Innova v2. Lascia il nodo vuoto per rilevarlo automaticamente.",
+        "data": {
+          "email": "Email Innova",
+          "password": "Password Innova",
+          "mac": "Indirizzo MAC Wi-Fi",
+          "node_id": "Nodo (opzionale)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Accesso o ricerca dispositivo falliti. Consulta i registri Innova v2.",
+      "invalid_mac": "Indirizzo MAC non valido."
+    },
+    "abort": {
+      "already_configured": "Dispositivo già configurato."
+    }
+  }
+}
