@@ -6,6 +6,9 @@ Questa integrazione nasce dall'esigenza di collegare i dispositivi M7 all'impian
 
 **Versione attuale: 0.1.4 — integrazione non ufficiale, in sviluppo.**
 
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=markdade80&repository=innovaductom7&category=integration)
+[![Add Integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=innova_ducto_m7)
+
 ## Funzionalità
 
 - Rilevamento del dispositivo tramite account Innova e MAC Wi-Fi.
