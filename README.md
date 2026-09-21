@@ -142,6 +142,9 @@ Lo stato completo e gli eventi incrementali del protocollo hanno strutture diffe
 | 0.1.3 | Preset Manuale/Calendario, passaggio a Manuale prima del setpoint e arrotondamento dell'umidità. |
 | 0.1.2 | Lettura corretta dello stato completo restituito da `SendDevice`; prima conferma sull'impianto. |
 
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=markdade80&repository=innovaductom7&category=integration)
+[![Add Integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=innova_ducto_m7)
+
 ## Riconoscimenti
 
 Il progetto [Home Assistant Innova Duepuntozero di Christoph Hohner](https://github.com/ChristophHohner/homeassistant-innova-duepuntozero) è stato un riferimento iniziale per l'analisi del precedente protocollo cloud.
