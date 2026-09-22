@@ -9,6 +9,8 @@
   "integration_type": "device",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/markdade80/innovaductom7/issues",
-  "requirements": [],
+  "requirements": [
+    "h2==4.3.0"
+  ],
   "version": "0.1.4"
 }
