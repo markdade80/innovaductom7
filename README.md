@@ -26,13 +26,14 @@ Questa integrazione nasce dall'esigenza di collegare i dispositivi M7 all'impian
 
 ## Compatibilità e verifiche
 
-L'integrazione è destinata ai **Ducto con comando M7 Wi-Fi** associati all'app Innova recente.
+L'integrazione è destinata ai **Ducto con comando M7 Wi-Fi** associati all'app Innova recente, altri dispositivi innova non testati, potete provare senza alcuna garanzia.
 
 La lettura dello stato e i comandi base sono stati confermati su un M7 identificato dal cloud con `vendorId: 1`, `productId: 2002` e `hwRevision: 1`. Il nome del dispositivo, temperatura, setpoint e umidità vengono letti correttamente. Con il calendario disabilitato nell'app, il dispositivo accetta le impostazioni inviate da Home Assistant.
 
 Il codice include parser per le famiglie cloud **fancoil** e **thermostat**. Questo non costituisce una conferma di compatibilità con tutti i prodotti Innova.
 
 I preset Manuale/Calendario e il comando Turbo sono implementati sulla base delle definizioni dell'APK e verificati con test locali; il collaudo completo di queste funzioni sui diversi modelli è ancora in corso.
+tuttavia non è stata ancora implementata la funzione di scelta dei calendari, è solo possibile richiamare la funzione manuale da HA ma non il contrario. In studio l'implementazione, ma vedo difficile poter "importare" i calendari salvati tramite app all'interno dell'integrazione.
 
 ## Requisiti
 
@@ -42,7 +43,8 @@ I preset Manuale/Calendario e il comando Turbo sono implementati sulla base dell
 - MAC Wi-Fi del dispositivo.
 - Connessione Internet disponibile sia per Home Assistant sia per il dispositivo.
 
-L'accesso tramite Google/OAuth non è implementato. L'integrazione utilizza il cloud: non offre controllo locale né Bluetooth.
+L'accesso tramite Google/OAuth non è implementato. L'integrazione utilizza il cloud innova con le stesse credenziali utilizzate nell'app, se avete effettuato accesso tramite account google non sarà possibile accedervi, consiglio creazione di nuovo utente con invito ad unirsi ai device tramite app proprietaria.
+Non offre controllo locale né Bluetooth.
 
 ## Installazione tramite HACS
 
